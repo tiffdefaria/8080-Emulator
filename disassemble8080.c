@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "disassemble8080.h"
 //takes in pointer to the assembly code program counter in it's current offset
 int Disassembler(unsigned char *codebuffer, int pc){
     unsigned char *opcode = &codebuffer[pc]; //the current opcode at that pointer
