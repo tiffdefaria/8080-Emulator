@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "disassemble8080.h"
 
-int main(nt argc, char** argc){
+int main(int argc, char** argv){
     FILE *f = fopen (argv[1], "rb"); //opening a non-text file from command line parameters
     if(f == NULL){ //catch file error
         printf("Error: No file opened");
