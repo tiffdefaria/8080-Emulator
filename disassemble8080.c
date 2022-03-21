@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "disassemble8080.h"
 //takes in pointer to the assembly code program counter in it's current offset
-int Disassembler(unsigned char *codebuffer, int pc){
+int disassemble8080(unsigned char *codebuffer, int pc){
     unsigned char *opcode = &codebuffer[pc]; //the current opcode at that pointer
     int opbytes = 1; //the size of the instruction is 1 unless otherwise specified
     printf("%04x", pc); //print the program counter that's padded with leading zeros on the left if smaller than field width

@@ -1,4 +1,4 @@
 #pragma once
 #include <stdio.h>
 
-int Disassembler(unsigned char *codebuffer, int pc);
+int disassemble8080(unsigned char *codebuffer, int pc);
